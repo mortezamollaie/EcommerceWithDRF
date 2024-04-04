@@ -10,6 +10,8 @@ pytest
 
 pytest-django
 
+django-mptt
+
 
 # Commands
 
