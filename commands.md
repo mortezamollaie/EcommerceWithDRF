@@ -12,6 +12,8 @@ pytest-django
 
 django-mptt
 
+drf-spectacular
+
 
 # Commands
 
