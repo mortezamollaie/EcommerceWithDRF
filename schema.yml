@@ -3,6 +3,25 @@ info:
   title: Django DRF Ecommerce
   version: 0.0.0
 paths:
+  /api/brand/:
+    get:
+      operationId: api_brand_list
+      description: A simple Viewset for viewing brands
+      tags:
+      - api
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/BrandSerializers'
+          description: ''
   /api/category/:
     get:
       operationId: api_category_list
@@ -170,6 +189,18 @@ paths:
           description: ''
 components:
   schemas:
+    BrandSerializers:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        name:
+          type: string
+          maxLength: 100
+      required:
+      - id
+      - name
     CategorySerializers:
       type: object
       properties:

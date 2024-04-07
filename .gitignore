@@ -3,3 +3,8 @@
 db.sqlite3
 .env
 .coverage
+schema.yml
+venv/
+.vscode
+htmlcov/
+*-commands.md
