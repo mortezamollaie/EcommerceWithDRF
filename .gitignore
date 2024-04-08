@@ -8,3 +8,4 @@ venv/
 .vscode
 htmlcov/
 *-commands.md
+htmlcov/
